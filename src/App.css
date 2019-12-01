@@ -1,0 +1,476 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	display: block;
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	background-color: #f0f0f0;
+}
+#app .home-page {
+    display: table;
+	margin: 5vw auto;
+	width: 85vw;
+}
+#app .home-page .logo-wrap {
+    display: block;
+    width: 75px;
+    margin: 15px auto;
+}
+#app .home-page .search-wrap {
+	display: block;
+	width: 85vw;
+}
+#app .home-page .search-wrap form {
+	display: block;
+}
+#app .home-page .search-wrap form .input-wrap {
+	display: block;
+    background-color: #fff;
+    border-radius: 3px;
+    position: relative;
+	overflow: hidden;
+	padding: 10px;
+}
+#app .home-page .search-wrap form .input-wrap input {
+	display: inline-block;
+    padding: 10px 10px 9px 10px;
+    border: 0px;
+    width: calc(100% - 36px);
+    background-color: transparent;
+    vertical-align: top;
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+#app .home-page .search-wrap form .input-wrap > a {
+	display: inline-block;
+    width: 36px;
+    vertical-align: top;
+    padding: 9px 10px 5px 10px;
+}
+#app .home-page .search-wrap form .suggestions-wrap {
+	display: block;
+}
+#app .home-page .search-wrap form .suggestions-wrap > h1 {
+	font-size: 16px;
+    margin: 10px;
+}
+#app .home-page .search-wrap form .suggestions-wrap .results-count {
+    font-size: 10px;
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    background-color: #f0f0f042;
+    text-transform: capitalize;
+    border-radius: 3px;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul {
+	list-style-type: none;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul li a.suggestion-link {
+	display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    transition: background-color .35s ease-in-out;
+    border-radius: 3px;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul li a.suggestion-link:hover {
+	background-color: #f0f0f042;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul li a.suggestion-link > .img-wrap {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px 10px 5px 5px;
+    vertical-align: top;
+    border-radius: 3px;
+    overflow: hidden;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul li a.suggestion-link .info-wrap  {
+	display: inline-block;
+	width: calc(100% - 60px);
+	vertical-align: top;
+	padding: 5px 0 4px 0;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul li a.suggestion-link .info-wrap .left {
+	display: inline-block;
+	width: calc(100% - 80px);
+	vertical-align: top;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul li a.suggestion-link .info-wrap .left h3.name {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul li a.suggestion-link .info-wrap .left span.author {
+	font-size: 12px;
+    font-style: italic;
+    display: block;
+    margin-top: 0px;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul li a.suggestion-link .info-wrap .right {
+    display: inline-block;
+    width: 70px;
+    vertical-align: top;
+    padding-top: 4px;
+    margin-left: 10px;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul li a.suggestion-link .info-wrap .right div:first-child {
+	margin-bottom: 5px;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul li a.suggestion-link .info-wrap .right div img {
+	width: 16px;
+	vertical-align: top;
+}
+#app .home-page .search-wrap form .suggestions-wrap ul li a.suggestion-link .info-wrap .right div span {
+	font-size: 12px;
+	vertical-align: top;
+	margin-left: 4px;
+}
+#app .home-page .search-wrap p {
+	font-size: 11px;
+    color: #484848;
+	font-weight: 600;
+	text-align: center;
+	margin: 15px 0 0 0;
+	font-style: italic;
+}
+#app .repository-page {
+	display: table;
+	margin: 5vw auto;
+	width: 85vw;
+}
+#app .repository-page .personal-wrap {
+	display: block;
+	width: 230px;
+	vertical-align: top;
+}
+#app .repository-page .personal-wrap .img-wrap {
+	width: 150px;
+    height: 150px;
+    display: block;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 8px;
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: opacity .35s ease-in-out;
+    overflow: hidden;
+}
+#app .repository-page .personal-wrap .img-wrap img {
+	border-radius: 2px;
+}
+#app .repository-page .personal-wrap a:not(.img-wrap) {
+	text-decoration: none;
+	color: #000;
+}
+#app .repository-page .personal-wrap h2.username {
+	display: block;
+    margin: 0 0 25px 0;
+    padding: 0 0 0 8px;
+    font-size: 16px;
+}
+#app .repository-page .personal-wrap .repo-list-wrap {
+	display: none;
+	padding-left: 8px;
+}
+#app .repository-page .personal-wrap .repo-list-wrap span {
+	font-size: 12px;
+	font-weight: 600;
+}
+#app .repository-page .personal-wrap .repo-list-wrap ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+#app .repository-page .personal-wrap .repo-list-wrap ul li {
+    display: block;
+    padding: 0;
+    margin: 0 0 2px 0;
+    font-size: 12px;
+}
+#app .repository-page .personal-wrap .repo-list-wrap ul li a {
+	display: block;
+	color: #000;
+}
+#app .repository-page .personal-wrap .repo-list-wrap ul li a.current {
+	font-weight: 600;
+    text-decoration: line-through;
+}
+#app .repository-page .personal-wrap .repo-list-wrap ul li a:not(.current):hover {
+	text-decoration: underline;
+}
+#app .repo-wrap {
+	display: block;
+	width: 85vw;
+	vertical-align: top;
+	padding-left: 10px;
+}
+#app .repo-wrap .title-wrap span {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 0;
+}
+#app .repo-wrap .title-wrap h1.repo-title {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    max-width: 100%;
+}
+#app .repo-wrap .title-wrap span.repo-privacy {
+    display: none;
+    width: 15px;
+    vertical-align: top;
+    margin-left: 5px;
+    margin: 8px 0 0 5px;
+}
+#app .repo-wrap .repo-description {
+	font-size: 16px;
+}
+#app .repo-wrap .languages {
+	font-size: 12px;
+    font-style: italic;
+    margin-top: 25px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    padding: 2px;
+    margin-bottom: -5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 80vw;
+}
+#app .repo-wrap .summary-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 25px 0 0 0;
+}
+#app .repo-wrap .summary-list li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+#app .repo-wrap .summary-list li a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+    opacity: 1;
+    transition: opacity .35s ease-in-out;
+}
+#app .repo-wrap .summary-list li a span {
+	display: inline-block;
+	vertical-align: top;
+}
+#app .repo-wrap .summary-list li a span.label {
+    width: 100px;
+    font-size: 12px;
+}
+#app .repo-wrap .summary-list li a span.icon {
+	width: 16px;
+}
+#app .repo-wrap .branches-wrap ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#app .repo-wrap .branches-wrap ul li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+#app .repo-wrap .contributers-wrap h3 {
+	display: block;
+    margin: 35px 0 10px 0;
+}
+#app .repo-wrap .contributers-wrap ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#app .repo-wrap .contributers-wrap ul li {
+	display: inline-block;
+    padding: 0;
+    margin: 0 6px 5px 0;
+}
+#app .repo-wrap .contributers-wrap ul li a {
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: block;
+    opacity: 1;
+    transition: opacity .35s ease-in-out;
+}
+#app .repo-wrap .updated {
+	font-size: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+
+#app .home-page .logo-wrap img,
+#app .repo-wrap .contributers-wrap ul li a img,
+#app .repo-wrap .summary-list li a span.icon img,
+#app .repo-wrap .title-wrap span.repo-privacy img,
+#app .repository-page .personal-wrap .img-wrap img,
+#app .home-page .search-wrap form .input-wrap > a img,
+#app .home-page .search-wrap form .suggestions-wrap ul li a.suggestion-link > .img-wrap img {
+	max-width: 100%;
+}
+#app .repository-page .personal-wrap .img-wrap:hover,
+#app .repo-wrap .contributers-wrap ul li a:hover,
+#app .repo-wrap .summary-list li a:hover {
+	opacity: 0.8;
+}
+.Loader {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 15px auto;
+    text-align: center;
+}
+.Loader .loader {
+	display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #000;
+    top: 50%;
+    left: 31%;
+    animation: loader 2s infinite ease;
+    transform: translate(-50%, -50%);
+    transform-origin: 0 0;
+    border-radius: 3px;
+}
+.Loader .loader .loader-inner {
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	background-color: #000;
+	animation: loader-inner 2s infinite ease-in;
+}
+.page-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+@media screen and (min-width: 375px) {
+	#app .home-page .search-wrap,
+	#app .home-page {
+		width: 85vw;
+	}
+	#app .repo-wrap .summary-list {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		top: 5vw;
+		right: 5vw;
+	}
+}
+@media screen and (min-width: 500px) {
+	#app .home-page .search-wrap,
+	#app .home-page {
+		width: 55vw;
+	}
+}
+@media screen and (min-width: 700px) {
+	#app .repository-page .personal-wrap .repo-list-wrap {
+		display: block;
+	}
+	#app .repository-page .personal-wrap {
+		display: inline-block;
+	}
+	#app .repo-wrap {
+		display: inline-block;
+		width: calc(85vw - 240px);
+	}
+	#app .repo-wrap .title-wrap h1.repo-title {
+		max-width: calc(100% - 160px);
+		font-size: 40px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	#app .repo-wrap .languages {
+		max-width: 100%;
+	}
+	#app .repo-wrap .title-wrap span {
+		margin-bottom: -4px;
+	}
+	#app .repo-wrap .title-wrap span.repo-privacy {
+		display: inline-block;
+	}
+}
+@media screen and (min-width: 900px) {
+	#app .home-page .search-wrap,
+	#app .home-page {
+		width: 40vw;
+	}
+}
+
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg) translate(-50%, -50%);
+	}
+	
+	25% {
+		transform: rotate(180deg) translate(-50%, -50%);
+	}
+	
+	50% {
+		transform: rotate(180deg) translate(-50%, -50%);
+	}
+	
+	75% {
+		transform: rotate(360deg) translate(-50%, -50%);
+	}
+	
+	100% {
+		transform: rotate(360deg) translate(-50%, -50%);
+	}
+}
+@keyframes loader-inner {
+	0% {
+		height: 0%;
+	}
+	
+	25% {
+		height: 0%;
+	}
+	
+	50% {
+		height: 100%;
+	}
+	
+	75% {
+		height: 100%;
+	}
+	
+	100% {
+		height: 0%;
+	}
+}
